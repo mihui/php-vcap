@@ -36,7 +36,7 @@ class VCAP {
         return self::$__vcap_instance;
     }
 
-    public function getEnv() {
+    public function getVCAP() {
 
         return $this->_vcap_services;
     }
