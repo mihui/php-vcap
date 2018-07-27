@@ -1,0 +1,22 @@
+{
+    "name": "mihui/php-vcap",
+    "description": "Library of accessing IBM Cloud VCAP_SERVICES environment variables.",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^7.2"
+    },
+    "license": "Apache License 2.0",
+    "authors": [
+        {
+            "name": "Michael",
+            "email": "mihui.net@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}, 
+    "autoload": {
+        "classmap": [
+            "src"
+        ]
+    }
+}
