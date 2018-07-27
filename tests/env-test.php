@@ -35,5 +35,17 @@ final class VCAPTest extends TestCase {
             'conversation', 
             $variables[0]
         );
+
+        $this->assertEquals(
+            TRUE, 
+            VCAP::getInstance()->isLocal()
+        );
+
+        $nullVar = VCAP::getInstance()->getServiceVariable('what', 'nothing');
+        $this->assertNull($nullVar);
+
+        $payload = VCAP::getInstance()->getVCAP();
+
+        $this->assertArrayHasKey('cloudantNoSQLDB', $payload);
     }
 }

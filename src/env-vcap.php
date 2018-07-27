@@ -89,6 +89,9 @@ class VCAP {
         return $this->_is_local;
     }
 
+    /**
+     * @codeCoverageIgnore
+     */
     function __destruct() {
 
         unset($this->_vcap_services);
