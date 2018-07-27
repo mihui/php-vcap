@@ -13,7 +13,7 @@ Installing [Composer](http://getcomposer.org) will be easier to manage dependenc
 Run the Composer command to install the latest version of the Watson PHP SDK:
 
 ```shell
-composer require mihui/php-vcap
+composer require mihui/php-vcap:dev-master
 ```
 
 
